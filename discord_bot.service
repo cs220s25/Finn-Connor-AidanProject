@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch the Java Maven Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=java -jar /Finn-Connor-AidanProject/target/dbot-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+[Install]
+WantedBy=multi-user.target
+
