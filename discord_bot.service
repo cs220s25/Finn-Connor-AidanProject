@@ -4,7 +4,9 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=java -jar /Finn-Connor-AidanProject/target/dbot-1.0-SNAPSHOT-jar-with-dependencies.jar
+User=ec2-user
+WorkingDirectory=/home/ec2-user/Finn-Connor-AidanProject
+ExecStart=/usr/lib/jvm/java-21-amazon-corretto/bin/java -jar target/dbot-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 [Install]
 WantedBy=multi-user.target
