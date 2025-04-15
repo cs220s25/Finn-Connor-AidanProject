@@ -1,4 +1,4 @@
-# Finn-Connor-Aidan Project
+# Finn-Connor-Aidan DevOps Project
 
 ### CI Status
 
