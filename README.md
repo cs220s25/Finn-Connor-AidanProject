@@ -28,7 +28,10 @@ using the !help command.
 
 ## Tools
 
-
+- AWS: https://us-east-1.console.aws.amazon.com/console/home
+- Redis: https://redis.io/
+- JaCoCo Code Coverage: https://github.com/cozyloon/JaCoCo_Code-Coverage
+- Docker: https://www.docker.com/get-started/
 
 ## Background
 
