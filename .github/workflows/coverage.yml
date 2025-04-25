@@ -20,7 +20,7 @@ jobs:
 
       - name: Build and Test
         if: always()
-        run: mvn -B package --file pom.xml                 
+        run: mvn -B clean verify                 
         continue-on-error: true    
 
       - name: Upload Report
@@ -28,14 +28,14 @@ jobs:
         with:
           name: jacoco-report
           path: |
-            /target/site/jacoco/jacoco.xml
-            /target/site/jacoco/index.html
+            target/site/jacoco/jacoco.xml
+            target/site/jacoco/index.html
        
       - name: Add coverage to PR
         id: jacoco
         uses: madrapps/jacoco-report@v1.6.1
         with:
-          paths: /target/site/jacoco/jacoco.xml
+          paths: target/site/jacoco/jacoco.xml
           token: ${{ secrets.GITHUB_TOKEN }}
           min-coverage-overall: 80
           min-coverage-changed-files: 60
