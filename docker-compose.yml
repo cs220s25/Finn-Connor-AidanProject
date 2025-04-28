@@ -15,7 +15,5 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-    env_file:
-      - aws.env
     restart: unless-stopped
 
