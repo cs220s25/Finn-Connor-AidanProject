@@ -7,7 +7,7 @@ machine. The bot is a text-based adventure game. The player is trapped in a myst
 
 ## System Diagram
 
-![UML Diagram](images/UML diagram.png)
+![UML Diagram](images/UML%20diagram.png)
 
 ## Setup
 
