@@ -46,6 +46,7 @@ public class BotResponder {
 
     private String getHelpMessage() {
         return String.join("\n",
+                "Commands:",
                 "!start - Start the game",
                 "!locations - View available locations",
                 "!move <location> - Move to a different location",
